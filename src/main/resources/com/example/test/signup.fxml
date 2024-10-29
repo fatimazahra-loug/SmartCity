@@ -7,11 +7,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #16423C;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tuto1.SignUpController">
+<AnchorPane prefHeight="340.0" prefWidth="504.0" style="-fx-background-color: #16423C;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tuto1.SignUpController">
    <children>
-      <AnchorPane layoutX="296.0" layoutY="-6.0" prefHeight="309.0" prefWidth="208.0" stylesheets="@../../resources/design.css">
+      <AnchorPane layoutX="270.0" layoutY="-4.0" prefHeight="346.0" prefWidth="234.0" stylesheets="@../../resources/design.css">
          <children>
-            <TextField fx:id="username_id" layoutX="12.0" layoutY="65.0" prefHeight="25.0" prefWidth="185.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: yellow; -fx-border-width: 0px 0px 2px 0px;" styleClass="text-field">
+            <TextField fx:id="lastname_id" layoutX="19.0" layoutY="18.0" prefHeight="25.0" prefWidth="185.0" promptText="Lastname" style="-fx-background-color: transparent; -fx-border-color: yellow; -fx-border-width: 0px 0px 2px 0px; colo: ;" styleClass="text-field">
                <font>
                   <Font name="Georgia" size="12.0" />
                </font>
@@ -19,26 +19,50 @@
                   <URL value="@../../resources/design.css" />
                   <URL value="@../../resources/design.css" />
                </stylesheets></TextField>
-            <PasswordField fx:id="password_id" layoutX="12.0" layoutY="106.0" prefHeight="25.0" prefWidth="185.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: yellow; -fx-border-width: 0px 0px 2px 0px;" styleClass="password-field" stylesheets="@../../resources/design.css">
+            <TextField fx:id="firstname_id" layoutX="19.0" layoutY="60.0" prefHeight="25.0" prefWidth="185.0" promptText="Firstname" style="-fx-background-color: transparent; -fx-border-color: yellow; -fx-border-width: 0px 0px 2px 0px; colo: ;" styleClass="text-field">
+               <font>
+                  <Font name="Georgia" size="12.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@../../resources/design.css" />
+                  <URL value="@../../resources/design.css" />
+               </stylesheets></TextField>
+            <TextField fx:id="email_id" layoutX="19.0" layoutY="104.0" prefHeight="25.0" prefWidth="185.0" promptText="Email adress" style="-fx-background-color: transparent; -fx-border-color: yellow; -fx-border-width: 0px 0px 2px 0px; colo: ;" styleClass="text-field">
+               <font>
+                  <Font name="Georgia" size="12.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@../../resources/design.css" />
+                  <URL value="@../../resources/design.css" />
+               </stylesheets></TextField>
+            <TextField fx:id="username_id" layoutX="20.0" layoutY="143.0" prefHeight="25.0" prefWidth="185.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: yellow; -fx-border-width: 0px 0px 2px 0px; colo: ;" styleClass="text-field">
+               <font>
+                  <Font name="Georgia" size="12.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@../../resources/design.css" />
+                  <URL value="@../../resources/design.css" />
+               </stylesheets></TextField>
+            <PasswordField fx:id="password_id" layoutX="20.0" layoutY="182.0" prefHeight="25.0" prefWidth="185.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: yellow; -fx-border-width: 0px 0px 2px 0px;" styleClass="password-field" stylesheets="@../../resources/design.css">
                <font>
                   <Font name="Georgia" size="12.0" />
                </font></PasswordField>
-            <PasswordField fx:id="confirm_id" layoutX="12.0" layoutY="154.0" prefHeight="25.0" prefWidth="185.0" promptText="Confirm Password " style="-fx-background-color: transparent; -fx-border-color: yellow; -fx-border-width: 0px 0px 2px 0px;" styleClass="password-field" stylesheets="@../../resources/design.css">
+            <PasswordField fx:id="confirm_id" layoutX="20.0" layoutY="221.0" prefHeight="25.0" prefWidth="185.0" promptText="Confirm Password " style="-fx-background-color: transparent; -fx-border-color: yellow; -fx-border-width: 0px 0px 2px 0px;" styleClass="password-field" stylesheets="@../../resources/design.css">
                <font>
                   <Font name="Georgia" size="12.0" />
                </font></PasswordField>
-            <Button fx:id="signup_id" layoutX="33.0" layoutY="203.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #16423C;" text="Sign Up" textFill="#dbffc0">
+            <Button fx:id="signup_id" layoutX="77.0" layoutY="265.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #16db3a;" text="Sign Up">
                <font>
-                  <Font name="Gabriola" size="18.0" />
+                  <Font name="Gabriola" size="15.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Hyperlink fx:id="login_id" layoutX="130.0" layoutY="249.0" text="Log In" textFill="#16db3a" underline="true">
+            <Hyperlink fx:id="login_id" layoutX="138.0" layoutY="299.0" text="Log In" textFill="#caf44c" underline="true">
                <font>
                   <Font name="Gabriola" size="17.0" />
                </font></Hyperlink>
-            <Label layoutX="30.0" layoutY="258.0" text="Have an account ?" textFill="#fffffe">
+            <Label layoutX="32.0" layoutY="307.0" text="Have an account ?" textFill="#fffffe">
                <font>
                   <Font name="Georgia" size="12.0" />
                </font>

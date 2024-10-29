@@ -23,14 +23,14 @@
                     <font>
                         <Font name="Georgia" size="12.0" />
                     </font></PasswordField>
-                <Button fx:id="login_id" layoutX="33.0" layoutY="203.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #16423C;" text="LogIn" textFill="#dbffc0">
+                <Button fx:id="login_id" layoutX="70.0" layoutY="205.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #16db3a;" text="Log In">
                     <font>
-                        <Font name="Gabriola" size="18.0" />
+                        <Font name="Gabriola" size="15.0" />
                     </font>
                     <cursor>
                         <Cursor fx:constant="HAND" />
                     </cursor></Button>
-                <Hyperlink fx:id="signup_id" layoutX="130.0" layoutY="249.0" text="SingUp" textFill="#16db3a" underline="true">
+                <Hyperlink fx:id="signup_id" layoutX="130.0" layoutY="249.0" text="SingUp" textFill="#caf44c" underline="true">
                     <font>
                         <Font name="Gabriola" size="17.0" />
                     </font></Hyperlink>
