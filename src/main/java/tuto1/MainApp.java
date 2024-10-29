@@ -4,7 +4,10 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
+
+import java.util.Objects;
 
 public class MainApp extends Application {
     private Stage primaryStage;
@@ -14,18 +17,20 @@ public class MainApp extends Application {
         this.primaryStage = primaryStage;
         primaryStage.setTitle("Smart City Application");
 
+        // Load the icon image from classpath
+        Image image = new Image(Objects.requireNonNull(getClass().getResource("/com/example/test/assets/img.png")).toString(),800,800,true,true);
+        primaryStage.getIcons().add(image);
+
         // Start with the login view
         showLoginView();
     }
 
     public void showLoginView() throws Exception {
-        // Use a relative path to load the FXML file
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/test/login.fxml"));
         Parent root = loader.load();
 
-        // Assuming you have a controller with a setMainApp method
         LoginController controller = loader.getController();
-        controller.setMainApp(this); // Pass the reference of MainApp to the controller
+        controller.setMainApp(this); // Passing reference to MainApp if needed
 
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
