@@ -1,0 +1,11 @@
+.text-field, .password-field {
+    -fx-prompt-text-fill: gray; /* The color of the prompt text */
+    -fx-focus-color: rgb(126, 212, 133); /* The color of the border when focused */
+    -fx-background-color:  #16423C;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused, .password-field:focused{
+    -fx-prompt-text-fill: transparent; /* Hides the prompt text when focused */
+}
