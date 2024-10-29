@@ -18,7 +18,7 @@ public class MainApp extends Application {
         primaryStage.setTitle("Smart City Application");
 
         // Load the icon image from classpath
-        Image image = new Image(Objects.requireNonNull(getClass().getResource("/com/example/test/assets/logo.png")).toString(),600,600,true,true);
+        Image image = new Image(Objects.requireNonNull(getClass().getResource("/com/example/test/assets/img.png")).toString(),800,800,true,true);
         primaryStage.getIcons().add(image);
 
         // Start with the login view
