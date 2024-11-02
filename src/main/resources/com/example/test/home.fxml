@@ -37,7 +37,7 @@
                         <MenuItem mnemonicParsing="false" text="Historical Sites" />
                     </items>
                      <cursor>
-                        <Cursor fx:constant="OPEN_HAND" />
+                        <Cursor    fx:constant="OPEN_HAND" />
                      </cursor>
                      <font>
                         <Font name="Georgia" size="14.0" />
