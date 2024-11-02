@@ -9,3 +9,21 @@
 .text-field:focused, .password-field:focused{
     -fx-prompt-text-fill: transparent; /* Hides the prompt text when focused */
 }
+
+   .menu-button .arrow {
+       -fx-shape: "M0 0 H10 V2 H0 Z M0 4 H10 V6 H0 Z M0 8 H10 V10 H0 Z"; /* Replace this with your SVG path data */
+       -fx-background-color: black
+       ; /* Adjust the color as desired */
+       -fx-scale-x: 2
+          ; /* Adjust size if necessary */
+       -fx-scale-y: 3
+        ;
+
+   }
+.anchor-pane-background {
+    -fx-background-image: url("com/example/test/assets/bg.png"); /* Remplacez par le chemin de votre image */
+    -fx-background-size: cover; /* Pour couvrir tout le fond */
+    -fx-background-repeat: no-repeat; /* Pour ne pas répéter l'image */
+    -fx-background-position: center; /* Pour centrer l'image */
+}
+
