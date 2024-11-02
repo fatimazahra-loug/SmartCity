@@ -33,7 +33,7 @@
                         <MenuItem mnemonicParsing="false" text="Grounds" />
                         <MenuItem mnemonicParsing="false" text="Hotels" />
                         <MenuItem mnemonicParsing="false" text="Pharmacies" />
-                        <MenuItem mnemonicParsing="false" text="Transport " />
+                        <MenuItem mnemonicParsing="false" text="Transportation" />
                         <MenuItem mnemonicParsing="false" text="Historical Sites" />
                     </items>
                      <cursor>
