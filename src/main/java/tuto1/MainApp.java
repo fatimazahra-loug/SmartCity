@@ -22,6 +22,7 @@ public class MainApp extends Application {
         primaryStage.getIcons().add(image);
 
         // Start with the login view
+
         showLoginView();
     }
 
