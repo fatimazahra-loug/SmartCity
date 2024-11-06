@@ -24,4 +24,19 @@
     -fx-background-repeat: no-repeat; /* Pour ne pas répéter l'image */
     -fx-background-position: center; /* Pour centrer l'image */
 }
+.alert {
+    -fx-background-color: #16423C;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+
+.alert .label {
+    -fx-font-size: 14px;
+    -fx-font-family: "Georgia" ;
+     -fx-text-fill: black ;
+}
+.dialog-pane .button {
+    -fx-background-color: #4CAF50; /* Vert */
+    -fx-text-fill: white; /* Texte en blanc */
+}
 

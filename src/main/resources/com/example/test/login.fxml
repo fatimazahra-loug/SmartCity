@@ -6,11 +6,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #16423C;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tuto1.LoginController" stylesheets="@design.css">
+<AnchorPane prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #16423C;" stylesheets="@design.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tuto1.LoginController">
     <children>
         <AnchorPane layoutX="296.0" layoutY="-6.0" prefHeight="309.0" prefWidth="208.0">
             <children>
-                <TextField fx:id="username_id" layoutX="12.0" layoutY="86.0" prefHeight="25.0" prefWidth="185.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: yellow; -fx-border-width: 0px 0px 2px 0px;" styleClass="text-field">
+                <TextField fx:id="username_id" layoutX="12.0" layoutY="86.0" prefHeight="25.0" prefWidth="185.0" promptText="Username" style="-fx-font-family: 'Georgia';-fx-background-color: transparent; -fx-border-color: yellow; -fx-border-width: 0px 0px 2px 0px;" styleClass="text-field">
                     <font>
                         <Font name="Georgia" size="12.0" />
                     </font>
@@ -40,7 +40,7 @@
                 </Label>
             </children>
         </AnchorPane>
-        <Label layoutX="91.0" layoutY="173.0" prefHeight="47.0" prefWidth="160.0" style="-fx-border-color: green; -fx-border-width: 0px 0px 2px 0px;" text="MundialCity" textFill="#f0ff7c">
+        <Label layoutX="91.0" layoutY="173.0" prefHeight="47.0" prefWidth="160.0" style="-fx-border-color: green; -fx-border-width: 0px 0px 2px 0px;" text="MondialCity" textFill="#f0ff7c">
             <font>
                 <Font name="Gabriola" size="36.0" />
             </font>
