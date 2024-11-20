@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="542.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tuto1.Hotels_login_controller">
+    <children>
+        <Accordion layoutX="170.0" layoutY="312.0" />
+        <AnchorPane prefHeight="542.0" prefWidth="750.0">
+            <children>
+            <ImageView fitHeight="558.0" fitWidth="748.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/fullbg.png" />
+               </image>
+            </ImageView>
+                <Label layoutX="266.0" layoutY="49.0" prefHeight="53.0" prefWidth="329.0" text="Welcome username! " textFill="#195339">
+                    <font>
+                        <Font name="Gabriola" size="36.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="46.0" fitWidth="53.0" layoutX="8.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/ll.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="206.0" layoutY="94.0" text="“ With MondialCity Enhace your WorldCup experience! ”">
+                    <font>
+                        <Font name="Georgia" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="251.0" layoutY="527.0" text="© Copyright 2024  Rajae&amp;Gumi.  All rights reserved.">
+                    <font>
+                        <Font name="Georgia Bold Italic" size="9.0" />
+                    </font>
+                </Label>
+                <Label layoutX="142.0" layoutY="502.0" text="CONTACT US " textFill="WHITE">
+                    <font>
+                        <Font name="Georgia" size="12.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="11.0" fitWidth="12.0" layoutX="331.0" layoutY="504.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/TeleIcon.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="12.0" fitWidth="15.0" layoutX="530.0" layoutY="504.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/MailIcon.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="349.0" layoutY="504.0" text="0666666666" textFill="WHITE">
+                    <font>
+                        <Font name="Georgia" size="9.0" />
+                    </font>
+                </Label>
+                <Label layoutX="552.0" layoutY="504.0" text="MondialCity@gmail.com" textFill="WHITE">
+                    <font>
+                        <Font name="Georgia" size="9.0" />
+                    </font>
+                </Label>
+            <Button layoutX="679.0" layoutY="19.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="63.0" style="-fx-background-color: #16423c;" text="Log Out " textFill="WHITE" />
+            <AnchorPane layoutX="14.0" layoutY="124.0" prefHeight="177.0" prefWidth="369.0" style="-fx-background-color: white;" />
+            <AnchorPane layoutX="14.0" layoutY="308.0" prefHeight="177.0" prefWidth="369.0" style="-fx-background-color: white;" />
+            <AnchorPane layoutX="450.0" layoutY="140.0" prefHeight="309.0" prefWidth="219.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="&quot;Explore the Best Hotels Anywhere You Want!&quot;" />
+                  <Label layoutX="20.0" layoutY="36.0" text="Welcome to Mundial City! " />
+                  <Label layoutX="13.0" layoutY="59.0" text="Ready to plan your ultimate World Cup experience?" />
+                  <Label layoutX="14.0" layoutY="81.0" text="Now, you have the power to choose where you stay." />
+                  <Label layoutX="91.0" layoutY="128.0" text="Country" />
+                  <Label layoutX="94.0" layoutY="162.0" text="City" />
+                  <ChoiceBox fx:id="country" layoutX="161.0" layoutY="124.0" prefHeight="16.0" prefWidth="99.0" />
+                  <ChoiceBox fx:id="cityid" layoutX="161.0" layoutY="158.0" prefHeight="16.0" prefWidth="99.0" />
+                   
+               </children></AnchorPane>
+            <AnchorPane layoutX="445.0" layoutY="13.0" prefHeight="44.0" prefWidth="226.0">
+               <children>
+                  <TextField layoutX="12.0" layoutY="6.0" promptText="Search" />
+                  <Button fx:id="searchButton" layoutX="166.0" layoutY="6.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="53.0" style="-fx-background-color: #d3e48d;" styleClass="search-button" text="Search" textFill="#024c26" />
+               </children>
+            </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

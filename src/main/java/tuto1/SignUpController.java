@@ -36,14 +36,14 @@ public class SignUpController implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 if (!username_id.getText().trim().isEmpty() && !password_id.getText().trim().isEmpty() && !firstname_id.getText().trim().isEmpty() && !lastname_id.getText().trim().isEmpty() && !email_id.getText().trim().isEmpty() && !confirm_id.getText().trim().isEmpty()) {
-                    if(password_id== confirm_id) {
+                    //if(password_id== confirm_id) {
                         DBusers.signup(event, lastname_id.getText(), firstname_id.getText(), email_id.getText(), username_id.getText(), password_id.getText());
-                    }else{
-                        Alert alert = new Alert(Alert.AlertType.ERROR);
-                        alert.setContentText("Confirm Password is incorrect");
-                        alert.getDialogPane().getStylesheets().add(getClass().getResource("/com/example/test/design.css").toExternalForm());
-                        alert.show();
-                    }
+                    //}else{
+                        //Alert alert = new Alert(Alert.AlertType.ERROR);
+                        //alert.setContentText("Confirm Password is incorrect");
+                        //alert.getDialogPane().getStylesheets().add(getClass().getResource("/com/example/test/design.css").toExternalForm());
+                        //alert.show();
+                    //}
                 } else {
                     System.out.println("Please fill in all information ");
                     Alert alert = new Alert(Alert.AlertType.ERROR);

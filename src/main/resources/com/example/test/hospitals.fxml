@@ -6,22 +6,21 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minWidth="-Infinity" prefHeight="542.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tuto1.HomePageController">
+<AnchorPane minWidth="-Infinity" prefHeight="542.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hhh">
     <children>
         <Accordion layoutX="170.0" layoutY="312.0" />
         <AnchorPane prefHeight="177.0" prefWidth="748.0">
             <children>
-                <ImageView fitHeight="177.0" fitWidth="758.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@assets/bgg.png" />
-                    </image>
-                </ImageView>
+            <ImageView fitHeight="177.0" fitWidth="758.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/bgg.png" />
+               </image>
+            </ImageView>
                 <AnchorPane layoutX="574.0" layoutY="10.0" prefHeight="46.0" prefWidth="176.0" style="-fx-background-color: transparent;">
                     <children>
                         <MenuButton layoutX="129.0" layoutY="9.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: transparent;" stylesheets="@design.css">
@@ -72,59 +71,44 @@
                 </Label>
             </children>
         </AnchorPane>
-        <AnchorPane layoutX="1.0" layoutY="452.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="748.0">
-            <children>
-                <ImageView fitHeight="111.0" fitWidth="748.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@assets/bg%20down.png" />
-                    </image>
-                </ImageView>
-                <Label layoutX="238.0" layoutY="64.0" text="© Copyright 2024  Rajae&amp;Gumi.  All rights reserved.">
-                    <font>
-                        <Font name="Georgia Bold Italic" size="9.0" />
-                    </font>
-                </Label>
-                <Label layoutX="212.0" layoutY="26.0" text="CONTACT US " textFill="WHITE">
-                    <font>
-                        <Font name="Georgia" size="12.0" />
-                    </font>
-                </Label>
-                <ImageView fitHeight="11.0" fitWidth="12.0" layoutX="366.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@assets/TeleIcon.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="12.0" fitWidth="15.0" layoutX="465.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@assets/MailIcon.png" />
-                    </image>
-                </ImageView>
-                <Label layoutX="385.0" layoutY="31.0" text="0666666666" textFill="WHITE">
-                    <font>
-                        <Font name="Georgia" size="9.0" />
-                    </font>
-                </Label>
-                <Label layoutX="482.0" layoutY="30.0" text="MondialCity@gmail.com" textFill="WHITE">
-                    <font>
-                        <Font name="Georgia" size="9.0" />
-                    </font>
-                </Label>
-            </children>
-        </AnchorPane>
-      <AnchorPane layoutX="-1.0" layoutY="177.0" prefHeight="277.0" prefWidth="352.0">
-         <children>
-            <TextArea layoutX="14.0" layoutY="166.0" prefHeight="91.0" prefWidth="200.0" />
-            <Label layoutX="24.0" layoutY="129.0" text="Why Choose Mundial City?">
-               <font>
-                  <Font name="Georgia" size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="2.0" layoutY="-1.0" prefHeight="30.0" prefWidth="385.0" text="Welcome to Mundial City, your ultimate travel ">
-               <font>
-                  <Font name="Georgia" size="15.0" />
-               </font>
-            </Label>
-         </children>
+          <AnchorPane layoutX="1.0" layoutY="452.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="748.0">
+              <children>
+            <ImageView fitHeight="111.0" fitWidth="748.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/bg%20down.png" />
+               </image>
+            </ImageView>
+                  <Label layoutX="238.0" layoutY="64.0" text="© Copyright 2024  Rajae&amp;Gumi.  All rights reserved.">
+                      <font>
+                          <Font name="Georgia Bold Italic" size="9.0" />
+                      </font>
+                  </Label>
+                  <Label layoutX="212.0" layoutY="26.0" text="CONTACT US " textFill="WHITE">
+                      <font>
+                          <Font name="Georgia" size="12.0" />
+                      </font>
+                  </Label>
+                  <ImageView fitHeight="11.0" fitWidth="12.0" layoutX="366.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                          <Image url="@assets/TeleIcon.png" />
+                      </image>
+                  </ImageView>
+                  <ImageView fitHeight="12.0" fitWidth="15.0" layoutX="465.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                          <Image url="@assets/MailIcon.png" />
+                      </image>
+                  </ImageView>
+                  <Label layoutX="385.0" layoutY="31.0" text="0666666666" textFill="WHITE">
+                      <font>
+                          <Font name="Georgia" size="9.0" />
+                      </font>
+                  </Label>
+                  <Label layoutX="482.0" layoutY="30.0" text="MondialCity@gmail.com" textFill="WHITE">
+                      <font>
+                          <Font name="Georgia" size="9.0" />
+                      </font>
+                  </Label>
+              </children>
       </AnchorPane>
     </children>
 </AnchorPane>

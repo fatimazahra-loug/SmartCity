@@ -15,6 +15,8 @@ public class MainApp extends Application {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/com/example/test/home.fxml"));
             primaryStage.setTitle("MondialCity");
+
+
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
