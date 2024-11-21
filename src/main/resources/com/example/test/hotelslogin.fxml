@@ -66,18 +66,45 @@
                     </font>
                 </Label>
             <Button layoutX="679.0" layoutY="19.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="63.0" style="-fx-background-color: #16423c;" text="Log Out " textFill="WHITE" />
-            <AnchorPane layoutX="14.0" layoutY="124.0" prefHeight="177.0" prefWidth="369.0" style="-fx-background-color: white;" />
-            <AnchorPane layoutX="14.0" layoutY="308.0" prefHeight="177.0" prefWidth="369.0" style="-fx-background-color: white;" />
-            <AnchorPane layoutX="450.0" layoutY="140.0" prefHeight="309.0" prefWidth="219.0">
+            <AnchorPane layoutX="14.0" layoutY="124.0" prefHeight="177.0" prefWidth="369.0" style="-fx-border-color: #d3e48d;">
                <children>
-                  <Label layoutX="14.0" layoutY="14.0" text="&quot;Explore the Best Hotels Anywhere You Want!&quot;" />
-                  <Label layoutX="20.0" layoutY="36.0" text="Welcome to Mundial City! " />
-                  <Label layoutX="13.0" layoutY="59.0" text="Ready to plan your ultimate World Cup experience?" />
-                  <Label layoutX="14.0" layoutY="81.0" text="Now, you have the power to choose where you stay." />
-                  <Label layoutX="91.0" layoutY="128.0" text="Country" />
-                  <Label layoutX="94.0" layoutY="162.0" text="City" />
-                  <ChoiceBox fx:id="country" layoutX="161.0" layoutY="124.0" prefHeight="16.0" prefWidth="99.0" />
-                  <ChoiceBox fx:id="cityid" layoutX="161.0" layoutY="158.0" prefHeight="16.0" prefWidth="99.0" />
+                  <ImageView fitHeight="150.0" fitWidth="149.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                  <AnchorPane layoutX="175.0" layoutY="12.0" prefHeight="157.0" prefWidth="192.0" style="-fx-border-color: white;" />
+               </children></AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="308.0" prefHeight="177.0" prefWidth="369.0" style="-fx-border-color: #d3e48d;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="157.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                  <AnchorPane layoutX="176.0" layoutY="8.0" prefHeight="157.0" prefWidth="192.0" style="-fx-border-color: white;" />
+               </children></AnchorPane>
+            <AnchorPane layoutX="450.0" layoutY="140.0" prefHeight="301.0" prefWidth="293.0" style="-fx-border-color: #f0ff7c;">
+               <children>
+                  <Label layoutX="22.0" layoutY="14.0" text="&quot;Explore the Best Hotels Anywhere You Want!&quot;" textFill="#195339" underline="true">
+                     <font>
+                        <Font name="Gabriola" size="18.0" />
+                     </font></Label>
+                  <Label layoutX="87.0" layoutY="40.0" text="Welcome to Mundial City! ">
+                     <font>
+                        <Font name="Georgia" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="13.0" layoutY="59.0" text="Ready to plan your ultimate World Cup experience?">
+                     <font>
+                        <Font name="Georgia" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="14.0" layoutY="81.0" text="Now, you have the power to choose where you stay.">
+                     <font>
+                        <Font name="Georgia" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="91.0" layoutY="124.0" text="Country" underline="true">
+                     <font>
+                        <Font name="Gabriola" size="19.0" />
+                     </font></Label>
+                  <Label layoutX="101.0" layoutY="158.0" text="City" underline="true">
+                     <font>
+                        <Font name="Gabriola" size="19.0" />
+                     </font></Label>
+                  <ChoiceBox fx:id="country" layoutX="161.0" layoutY="122.0" prefHeight="16.0" prefWidth="99.0" style="-fx-background-color: #d3e48d;" />
+                  <ChoiceBox fx:id="cityid" layoutX="161.0" layoutY="158.0" prefHeight="16.0" prefWidth="99.0" style="-fx-background-color: #d3e48d;" />
+                  <Button layoutX="162.0" layoutY="201.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #d3e48d;" text="Submit" />
                    
                </children></AnchorPane>
             <AnchorPane layoutX="445.0" layoutY="13.0" prefHeight="44.0" prefWidth="226.0">

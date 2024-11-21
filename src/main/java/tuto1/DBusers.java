@@ -12,12 +12,16 @@ import java.io.IOException;
 import java.sql.*;
 
 public class DBusers {
+    private static int c=0;
     public static void  changescene(ActionEvent event , String fxmlfilename,String username ) {
         try {
             FXMLLoader loader = new FXMLLoader(DBusers.class.getResource(fxmlfilename));
             Parent root = loader.load();
-            //HomePageController homeController = loader.getController();
-            //homeController.setUsername(username);
+            if (fxmlfilename.equals("/com/example/test/home.fxml") && c!=0) {
+                HomePageController homeController = loader.getController();
+                homeController.setinfos(username);
+                c=0;
+            }
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
@@ -74,6 +78,7 @@ public class DBusers {
         Connection con = null;
         PreparedStatement stmt  =null;
         ResultSet result=null;
+
         try{
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/java_project","root","gumi2004");
             stmt=con.prepareStatement("SELECT userpassword FROM users WHERE username = ?");
@@ -89,6 +94,7 @@ public class DBusers {
                 while(result.next()){
                     String pass=result.getString("userpassword");
                     if(pass.equals(password)){
+                        c++;
                         changescene(event, "/com/example/test/home.fxml",username);                    }else{
                         Alert alert =new Alert(Alert.AlertType.ERROR);
                         alert.setContentText("Password is incorrect ");

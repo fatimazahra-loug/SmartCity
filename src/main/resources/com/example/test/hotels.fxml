@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane minWidth="-Infinity" prefHeight="542.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tuto1.HomePageController">
+<AnchorPane minWidth="-Infinity" prefHeight="542.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hhh">
     <children>
         <Accordion layoutX="170.0" layoutY="312.0" />
         <AnchorPane prefHeight="177.0" prefWidth="748.0">
@@ -41,17 +41,16 @@
                                 <Font name="Georgia" size="14.0" />
                             </font>
                         </MenuButton>
-                  <Button fx:id="logout" layoutX="73.0" layoutY="10.0" mnemonicParsing="false" text="Log Out" />
                         <Button fx:id="signupbutton_id" layoutX="73.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #16423c;" text="Sign Up" textFill="WHITE" />
                         <Button fx:id="loginbutton_id" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #16423c;" text="Log In " textFill="WHITE" />
                     </children>
                 </AnchorPane>
-                <Label fx:id="mondiallabel" layoutX="370.0" layoutY="93.0" prefHeight="46.0" prefWidth="121.0" text="MondialCity " textFill="WHITE">
+                <Label layoutX="370.0" layoutY="93.0" prefHeight="46.0" prefWidth="121.0" text="MondialCity " textFill="WHITE">
                     <font>
                         <Font name="Gabriola" size="27.0" />
                     </font>
                 </Label>
-                <Label fx:id="labelwelcome" layoutX="184.0" layoutY="61.0" prefHeight="53.0" prefWidth="141.0" text="Welcome " textFill="#d3e48d">
+                <Label layoutX="194.0" layoutY="62.0" prefWidth="142.0" text="Welcome " textFill="#d3e48d">
                     <font>
                         <Font name="Gabriola" size="43.0" />
                     </font>
@@ -61,21 +60,16 @@
                         <Image url="@assets/ll.png" />
                     </image>
                 </ImageView>
-                <Label fx:id="tolabel" layoutX="337.0" layoutY="82.0" text="to" textFill="#d3e48d">
+                <Label layoutX="337.0" layoutY="82.0" text="to" textFill="#d3e48d">
                     <font>
                         <Font name="Gabriola" size="24.0" />
                     </font>
                 </Label>
-                <Label fx:id="quoteid" layoutX="210.0" layoutY="140.0" text="“ With MondialCity Enhace your WorldCup experience! ”">
+                <Label layoutX="210.0" layoutY="140.0" text="“ With MondialCity Enhace your WorldCup experience! ”">
                     <font>
                         <Font name="Georgia" size="14.0" />
                     </font>
                 </Label>
-            <Label fx:id="userlabel" layoutX="314.0" layoutY="66.0" prefHeight="46.0" prefWidth="112.0" textFill="WHITE">
-               <font>
-                  <Font name="Gabriola" size="31.0" />
-               </font>
-            </Label>
             </children>
         </AnchorPane>
         <AnchorPane layoutX="1.0" layoutY="452.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="748.0">
@@ -117,68 +111,35 @@
                 </Label>
             </children>
         </AnchorPane>
-      <AnchorPane layoutX="-1.0" layoutY="177.0" prefHeight="277.0" prefWidth="333.0">
-         <children>
-            <Label layoutX="7.0" layoutY="142.0" text="Why Choose Mundial City?" textFill="#2d7735" underline="true">
-               <font>
-                  <Font name="Gabriola" size="19.0" />
-               </font>
-            </Label>
-            <Text layoutX="7.0" layoutY="15.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Mundial City, your ultimate travel companion for an unforgettable journey! Whether you're wandering through the vibrant streets of Morocco, soaking in the charming landscapes of Portugal, or immersing yourself in the rich cultural tapestry of Spain, we bring you a carefully curated collection of everything you need for a better travel experience." textAlignment="JUSTIFY" wrappingWidth="297.3332977294922">
-               <font>
-                  <Font name="Georgia" size="12.0" />
-               </font>
-            </Text>
-            <Text layoutX="13.0" layoutY="179.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At Mundial City, we believe that the experience of travel goes beyond just the destination—it’s about crafting a journey that is both unforgettable and hassle-free.   With Mundial City, your World Cup journey becomes more than just a trip; it’s an experience that celebrates the essence of the game, offering you the best in convenience, comfort, and local immersion." textAlignment="JUSTIFY" wrappingWidth="297.33329772949224">
-               <font>
-                  <Font name="Georgia" size="12.0" />
-               </font>
-            </Text>
-         </children>
-      </AnchorPane>
-      <AnchorPane layoutX="337.0" layoutY="177.0" prefHeight="277.0" prefWidth="411.0">
-         <children>
-            <ImageView fitHeight="111.0" fitWidth="193.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@assets/rrr.jpg" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="90.0" fitWidth="169.0" layoutX="233.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@assets/Terrain.jpg" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="101.0" fitWidth="176.0" layoutX="225.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@assets/tt.jpg" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="97.0" fitWidth="176.0" layoutX="19.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@assets/ph.jpg" />
-               </image>
-            </ImageView>
-            <Label layoutX="85.0" layoutY="113.0" text="Restaurants">
-               <font>
-                  <Font name="Gabriola" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="298.0" layoutY="113.0" text="Grounds">
-               <font>
-                  <Font name="Gabriola" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="85.0" layoutY="242.0" text="Pharmacies">
-               <font>
-                  <Font name="Gabriola" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="303.0" layoutY="242.0" text="Hotels">
-               <font>
-                  <Font name="Gabriola" size="14.0" />
-               </font>
-            </Label>
-         </children>
-      </AnchorPane>
+        <ImageView fitHeight="101.0" fitWidth="233.0" layoutX="19.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/hotel-hero-default-4.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="131.0" fitWidth="374.0" layoutX="19.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/OGR5NTATTFDVVKRRBNILENA5CM.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="452.0" layoutY="194.0" prefHeight="51.0" prefWidth="197.0" text="Hotels " textFill="#5ed23b" underline="true">
+            <font>
+                <Font name="Gabriola" size="35.0" />
+            </font>
+        </Label>
+        <Text layoutX="317.0" layoutY="260.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At Mundial City, we understand that where you stay is just as important as the journey itself. Whether you're looking for luxury, comfort, or convenience, we offer a handpicked selection of hotels across Morocco, Portugal, and Spain, tailored to suit every traveler's needs. From the bustling streets of Casablanca to the charming neighborhoods of Lisbon and the vibrant heart of Madrid, we ensure you have the perfect place to rest and recharge during your World Cup adventure." textAlignment="JUSTIFY" wrappingWidth="401.4422302246094">
+            <font>
+                <Font name="Georgia" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#a6b530" layoutX="350.0" layoutY="420.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create an account or log in to access all the features and discover exactly what you need!" wrappingWidth="374.34515380859375">
+            <font>
+                <Font name="Georgia" size="11.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="33.0" fitWidth="38.0" layoutX="318.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/img.png" />
+            </image>
+        </ImageView>
     </children>
 </AnchorPane>

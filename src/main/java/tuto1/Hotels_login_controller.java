@@ -18,6 +18,7 @@ public class Hotels_login_controller implements Initializable {
         // Ensure the ChoiceBox is not null before adding items
         if (country != null) {
             country.getItems().addAll(countries);
+
         }
     }
 }
