@@ -1,14 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.test.Grounds"
-            prefHeight="400.0" prefWidth="600.0">
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.media.MediaView?>
+<AnchorPane minWidth="-Infinity" prefHeight="542.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tuto1.InfosPagesController">
+    <children>
+        <Accordion layoutX="170.0" layoutY="312.0" />
+        <AnchorPane prefHeight="177.0" prefWidth="748.0">
+            <children>
+                <ImageView fitHeight="177.0" fitWidth="758.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/Bgtop.png" />
+                    </image>
+                </ImageView>
+                <AnchorPane layoutX="574.0" layoutY="10.0" prefHeight="46.0" prefWidth="176.0" style="-fx-background-color: transparent;">
+                    <children>
+                        <MenuButton  layoutX="129.0" layoutY="9.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: transparent;" stylesheets="@design.css">
+                            <items>
+                                <MenuItem fx:id="Hospitals" mnemonicParsing="false" text="Hospitals" onAction="#handleMenu"/>
+                                <MenuItem fx:id="Restaurants" mnemonicParsing="false" text="Restaurants " onAction="#handleMenu"/>
+                                <MenuItem fx:id="Grounds" mnemonicParsing="false" text="Grounds" onAction="#handleMenu"/>
+                                <MenuItem fx:id="Hotels" mnemonicParsing="false" text="Hotels" onAction="#handleMenu"/>
+                                <MenuItem fx:id="Pharmacies" mnemonicParsing="false" text="Pharmacies" onAction="#handleMenu" />
+                                <MenuItem fx:id="HistoricalSites" mnemonicParsing="false" text="Historical Sites" onAction="#handleMenu"/>
+                            </items>
+                            <cursor>
+                                <Cursor fx:constant="OPEN_HAND" />
+                            </cursor>
+                            <font>
+                                <Font name="Georgia" size="14.0" />
+                            </font>
+                        </MenuButton>
+                        <Button fx:id="logoutbutt" layoutX="73.0" layoutY="10.0" mnemonicParsing="false" text="Log Out" />
+                        <Button fx:id="signupbutton_id" layoutX="73.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #16423c;" text="Sign Up" textFill="WHITE" />
+                        <Button fx:id="loginbutton_id" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #16423c;" text="Log In " textFill="WHITE" />
+                    </children>
+                </AnchorPane>
+                <Label layoutX="370.0" layoutY="93.0" prefHeight="46.0" prefWidth="121.0" text="MondialCity " textFill="WHITE">
+                    <font>
+                        <Font name="Gabriola" size="27.0" />
+                    </font>
+                </Label>
+                <Label layoutX="194.0" layoutY="62.0" prefWidth="142.0" text="Welcome " textFill="#d3e48d">
+                    <font>
+                        <Font name="Gabriola" size="43.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="46.0" fitWidth="53.0" layoutX="8.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/MLogo.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="337.0" layoutY="82.0" text="to" textFill="#d3e48d">
+                    <font>
+                        <Font name="Gabriola" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="210.0" layoutY="140.0" text="“ With MondialCity Enhace your WorldCup experience! ”">
+                    <font>
+                        <Font name="Georgia" size="14.0" />
+                    </font>
+                </Label>
 
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="1.0" layoutY="452.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="748.0">
+            <children>
+                <ImageView fitHeight="111.0" fitWidth="748.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/Bgbottom.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="238.0" layoutY="64.0" text="© Copyright 2024  Rajae&amp;Gumi.  All rights reserved.">
+                    <font>
+                        <Font name="Georgia Bold Italic" size="9.0" />
+                    </font>
+                </Label>
+                <Label layoutX="212.0" layoutY="26.0" text="CONTACT US " textFill="WHITE">
+                    <font>
+                        <Font name="Georgia" size="12.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="11.0" fitWidth="12.0" layoutX="366.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/TeleIcon.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="12.0" fitWidth="15.0" layoutX="465.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/MailIcon.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="385.0" layoutY="31.0" text="0666666666" textFill="WHITE">
+                    <font>
+                        <Font name="Georgia" size="9.0" />
+                    </font>
+                </Label>
+                <Label layoutX="482.0" layoutY="30.0" text="MondialCity@gmail.com" textFill="WHITE">
+                    <font>
+                        <Font name="Georgia" size="9.0" />
+                    </font>
+                </Label>
+                <Button fx:id="home_id" layoutX="651.0" layoutY="24.0" mnemonicParsing="false" onAction="#handleReturnHome" prefHeight="30.0" prefWidth="79.0" style="-fx-background-color: #16423c;" text="Home Page" textFill="WHITE">
+                    <font>
+                        <Font name="Gabriola" size="15.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </AnchorPane>
+        <ImageView fitHeight="123.0" fitWidth="247.0" layoutX="14.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/Terrain3.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="123.0" fitWidth="219.0" layoutX="14.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/Terrain2.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="429.0" layoutY="194.0" prefHeight="51.0" prefWidth="197.0" text="Grounds" textFill="#5ed23b" underline="true">
+            <font>
+                <Font name="Gabriola" size="35.0" />
+            </font>
+        </Label>
+        <Text layoutX="328.0" layoutY="255.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At Mondial City, we understand that the excitement of the World Cup is not just about the matches but also about the incredible venues where the games are held. To make sure you don’t miss out, we offer a curated list of the main grounds in the cities where the matches will be played across Morocco, Portugal, and Spain. From iconic stadiums in bustling cities to unique venues offering unforgettable experiences, we’ve got you covered. " textAlignment="JUSTIFY" wrappingWidth="365.4421691894531">
+            <font>
+                <Font name="Georgia" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#a6b530" layoutX="350.0" layoutY="420.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create an account or log in to access all the features and discover exactly what you need!" wrappingWidth="374.34515380859375">
+            <font>
+                <Font name="Georgia" size="11.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="33.0" fitWidth="38.0" layoutX="318.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/Ball.png" />
+            </image>
+        </ImageView>
+        <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" layoutX="182.0" layoutY="94.0" />
+    </children>
 </AnchorPane>

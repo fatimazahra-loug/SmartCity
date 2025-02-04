@@ -6,7 +6,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 import javafx.scene.Node;
-import javafx.scene.control.Alert;
 
 import java.io.IOException;
 import java.sql.*;
@@ -17,11 +16,6 @@ public class DBusers {
         try {
             FXMLLoader loader = new FXMLLoader(DBusers.class.getResource(fxmlfilename));
             Parent root = loader.load();
-            if (fxmlfilename.equals("/com/example/test/home.fxml") && c!=0) {
-                HomePageController homeController = loader.getController();
-                homeController.setinfos(username);
-                c=0;
-            }
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
@@ -40,7 +34,7 @@ public class DBusers {
         PreparedStatement checkstmt =null;
         ResultSet result=null;
         try{
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/java_project","root","gumi2004");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/javaproject","root","3112003");
             checkstmt = con.prepareStatement("SELECT * FROM users WHERE username= ?");
             checkstmt.setString(1,username);
             result=checkstmt.executeQuery();
@@ -74,46 +68,65 @@ public class DBusers {
             }
         }
     }
-    public static void login(ActionEvent event, String username,String password){
+    public static void login(ActionEvent event, String username, String password) {
         Connection con = null;
-        PreparedStatement stmt  =null;
-        ResultSet result=null;
+        PreparedStatement stmtUsers = null;
+        PreparedStatement stmtAdmins = null;
+        ResultSet result = null;
 
-        try{
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/java_project","root","gumi2004");
-            stmt=con.prepareStatement("SELECT userpassword FROM users WHERE username = ?");
-            stmt.setString(1,username);
-            result=stmt.executeQuery();
-            if(!result.isBeforeFirst() ){
-                System.out.println("User not found in database");
-                Alert alert =new Alert(Alert.AlertType.ERROR);
-                alert.setContentText("Username or password is incorrect ");
-                alert.getDialogPane().getStylesheets().add(DBusers.class.getResource("/com/example/test/design.css").toExternalForm());
-                alert.show();
-            }else{
-                while(result.next()){
-                    String pass=result.getString("userpassword");
-                    if(pass.equals(password)){
-                        c++;
-                        changescene(event, "/com/example/test/home.fxml",username);                    }else{
-                        Alert alert =new Alert(Alert.AlertType.ERROR);
-                        alert.setContentText("Password is incorrect ");
-                        alert.getDialogPane().getStylesheets().add(DBusers.class.getResource("/com/example/test/design.css").toExternalForm());
-                        alert.show();
-                    }
+        try {
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/javaproject", "root", "3112003");
+
+            stmtUsers = con.prepareStatement("SELECT userpassword FROM users WHERE username = ?");
+            stmtUsers.setString(1, username);
+            result = stmtUsers.executeQuery();
+
+            if (result.next()) {
+                String userPass = result.getString("userpassword");
+                if (userPass.equals(password)) {
+                    changescene(event, "/com/example/test/homeuser.fxml", username);
+                    return;
+                } else {
+                    showAlert("Password is incorrect");
+                    return;
                 }
             }
-        }catch (SQLException e){
+
+            stmtAdmins = con.prepareStatement("SELECT userpassword FROM admins WHERE username = ?");
+            stmtAdmins.setString(1, username);
+            result = stmtAdmins.executeQuery();
+
+            if (result.next()) {
+                String adminPass = result.getString("userpassword");
+                if (adminPass.equals(password)) {
+                    changescene(event, "/com/example/test/Admin.fxml", username);
+                } else {
+                    showAlert("Password is incorrect");
+                }
+            } else {
+                showAlert("Username or password is incorrect");
+            }
+
+        } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
-            try{
+        } finally {
+            try {
                 if (result != null) result.close();
-                if (stmt!= null) stmt.close();
+                if (stmtUsers != null) stmtUsers.close();
+                if (stmtAdmins != null) stmtAdmins.close();
                 if (con != null) con.close();
-            }catch (SQLException e){
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
-
     }
+
+
+    private static void showAlert(String message) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setContentText(message);
+        alert.getDialogPane().getStylesheets().add(DBusers.class.getResource("/com/example/test/design.css").toExternalForm());
+        alert.show();
+    }
+
 }

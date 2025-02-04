@@ -1,38 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Accordion?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane minWidth="-Infinity" prefHeight="542.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tuto1.HomePageController">
+<AnchorPane  minWidth="-Infinity" prefHeight="542.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tuto1.HomePageController">
     <children>
         <Accordion layoutX="170.0" layoutY="312.0" />
         <AnchorPane prefHeight="177.0" prefWidth="748.0">
             <children>
                 <ImageView fitHeight="177.0" fitWidth="758.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@assets/bgg.png" />
+                        <Image url="@assets/Bgtop.png" />
                     </image>
                 </ImageView>
                 <AnchorPane layoutX="574.0" layoutY="10.0" prefHeight="46.0" prefWidth="176.0" style="-fx-background-color: transparent;">
                     <children>
-                        <MenuButton layoutX="129.0" layoutY="9.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: transparent;" stylesheets="@design.css">
+                        <MenuButton  layoutX="129.0" layoutY="9.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: transparent;" stylesheets="@design.css">
                             <items>
-                                <MenuItem mnemonicParsing="false" text="Hospitals" />
-                                <MenuItem mnemonicParsing="false" text="Restaurants " />
-                                <MenuItem mnemonicParsing="false" text="Grounds" />
-                                <MenuItem mnemonicParsing="false" text="Hotels" />
-                                <MenuItem mnemonicParsing="false" text="Pharmacies" />
-                                <MenuItem mnemonicParsing="false" text="Transportation" />
-                                <MenuItem mnemonicParsing="false" text="Historical Sites" />
+                                <MenuItem fx:id="Hospitals" mnemonicParsing="false" text="Hospitals" onAction="#handleMenu"/>
+                                <MenuItem fx:id="Restaurants" mnemonicParsing="false" text="Restaurants " onAction="#handleMenu"/>
+                                <MenuItem fx:id="Grounds" mnemonicParsing="false" text="Grounds" onAction="#handleMenu"/>
+                                <MenuItem fx:id="Hotels" mnemonicParsing="false" text="Hotels" onAction="#handleMenu"/>
+                                <MenuItem fx:id="Pharmacies" mnemonicParsing="false" text="Pharmacies" onAction="#handleMenu" />
+                                <MenuItem fx:id="HistoricalSites" mnemonicParsing="false" text="Historical Sites" onAction="#handleMenu"/>
                             </items>
                             <cursor>
                                 <Cursor fx:constant="OPEN_HAND" />
@@ -41,9 +35,8 @@
                                 <Font name="Georgia" size="14.0" />
                             </font>
                         </MenuButton>
-                  <Button fx:id="logout" layoutX="73.0" layoutY="10.0" mnemonicParsing="false" text="Log Out" />
-                        <Button fx:id="signupbutton_id" layoutX="73.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #16423c;" text="Sign Up" textFill="WHITE" />
-                        <Button fx:id="loginbutton_id" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #16423c;" text="Log In " textFill="WHITE" />
+                        <Button fx:id="signupbutton_id"  onAction="#handlesignup" layoutX="73.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #16423c;" text="Sign Up" textFill="WHITE" />
+                        <Button fx:id="loginbutton_id" onAction="#handlelogin" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #16423c;" text="Log In " textFill="WHITE" />
                     </children>
                 </AnchorPane>
                 <Label fx:id="mondiallabel" layoutX="370.0" layoutY="93.0" prefHeight="46.0" prefWidth="121.0" text="MondialCity " textFill="WHITE">
@@ -58,7 +51,7 @@
                 </Label>
                 <ImageView fitHeight="46.0" fitWidth="53.0" layoutX="8.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@assets/ll.png" />
+                        <Image url="@assets/MLogo.png" />
                     </image>
                 </ImageView>
                 <Label fx:id="tolabel" layoutX="337.0" layoutY="82.0" text="to" textFill="#d3e48d">
@@ -66,23 +59,13 @@
                         <Font name="Gabriola" size="24.0" />
                     </font>
                 </Label>
-                <Label fx:id="quoteid" layoutX="210.0" layoutY="140.0" text="“ With MondialCity Enhace your WorldCup experience! ”">
-                    <font>
-                        <Font name="Georgia" size="14.0" />
-                    </font>
-                </Label>
-            <Label fx:id="userlabel" layoutX="314.0" layoutY="66.0" prefHeight="46.0" prefWidth="112.0" textFill="WHITE">
-               <font>
-                  <Font name="Gabriola" size="31.0" />
-               </font>
-            </Label>
             </children>
         </AnchorPane>
         <AnchorPane layoutX="1.0" layoutY="452.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="748.0">
             <children>
                 <ImageView fitHeight="111.0" fitWidth="748.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@assets/bg%20down.png" />
+                        <Image url="@assets/Bgbottom.png" />
                     </image>
                 </ImageView>
                 <Label layoutX="238.0" layoutY="64.0" text="© Copyright 2024  Rajae&amp;Gumi.  All rights reserved.">
@@ -117,68 +100,119 @@
                 </Label>
             </children>
         </AnchorPane>
-      <AnchorPane layoutX="-1.0" layoutY="177.0" prefHeight="277.0" prefWidth="333.0">
-         <children>
-            <Label layoutX="7.0" layoutY="142.0" text="Why Choose Mundial City?" textFill="#2d7735" underline="true">
-               <font>
-                  <Font name="Gabriola" size="19.0" />
-               </font>
-            </Label>
-            <Text layoutX="7.0" layoutY="15.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Mundial City, your ultimate travel companion for an unforgettable journey! Whether you're wandering through the vibrant streets of Morocco, soaking in the charming landscapes of Portugal, or immersing yourself in the rich cultural tapestry of Spain, we bring you a carefully curated collection of everything you need for a better travel experience." textAlignment="JUSTIFY" wrappingWidth="297.3332977294922">
-               <font>
-                  <Font name="Georgia" size="12.0" />
-               </font>
-            </Text>
-            <Text layoutX="13.0" layoutY="179.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At Mundial City, we believe that the experience of travel goes beyond just the destination—it’s about crafting a journey that is both unforgettable and hassle-free.   With Mundial City, your World Cup journey becomes more than just a trip; it’s an experience that celebrates the essence of the game, offering you the best in convenience, comfort, and local immersion." textAlignment="JUSTIFY" wrappingWidth="297.33329772949224">
-               <font>
-                  <Font name="Georgia" size="12.0" />
-               </font>
-            </Text>
-         </children>
-      </AnchorPane>
-      <AnchorPane layoutX="337.0" layoutY="177.0" prefHeight="277.0" prefWidth="411.0">
-         <children>
-            <ImageView fitHeight="111.0" fitWidth="193.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@assets/rrr.jpg" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="90.0" fitWidth="169.0" layoutX="233.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@assets/Terrain.jpg" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="101.0" fitWidth="176.0" layoutX="225.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@assets/tt.jpg" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="97.0" fitWidth="176.0" layoutX="19.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@assets/ph.jpg" />
-               </image>
-            </ImageView>
-            <Label layoutX="85.0" layoutY="113.0" text="Restaurants">
-               <font>
-                  <Font name="Gabriola" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="298.0" layoutY="113.0" text="Grounds">
-               <font>
-                  <Font name="Gabriola" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="85.0" layoutY="242.0" text="Pharmacies">
-               <font>
-                  <Font name="Gabriola" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="303.0" layoutY="242.0" text="Hotels">
-               <font>
-                  <Font name="Gabriola" size="14.0" />
-               </font>
-            </Label>
-         </children>
-      </AnchorPane>
+        <ScrollPane layoutY="178.0" prefHeight="277.0" prefWidth="748.0">
+            <content>
+                <!-- VBox to stack items vertically -->
+                <VBox alignment="CENTER" spacing="10.0">
+                    <!-- HBox for the first two AnchorPanes to be side by side -->
+                    <HBox alignment="CENTER" spacing="10.0">
+                        <!-- First AnchorPane for MediaView -->
+                        <AnchorPane prefHeight="300.0" prefWidth="400.0">
+                            <children>
+                                <MediaView fx:id="mediaView" fitHeight="300.0" fitWidth="400.0" />
+                            </children>
+                        </AnchorPane>
+                        <!-- Second AnchorPane for Text Section, positioned next to the first -->
+                        <AnchorPane prefHeight="277.0" prefWidth="348.0">
+                            <children>
+                                <Text layoutX="7.0" layoutY="15.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Mondial City, your ultimate travel companion for an unforgettable journey! Whether you're wandering through the vibrant streets of Morocco, soaking in the charming landscapes of Portugal, or immersing yourself in the rich cultural tapestry of Spain, we bring you a carefully curated collection of everything you need for a better travel experience." textAlignment="JUSTIFY" wrappingWidth="297.3332977294922">
+                                    <font>
+                                        <Font name="Georgia" size="12.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="13.0" layoutY="179.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At Mondial City, we believe that the experience of travel goes beyond just the destination—it’s about crafting a journey that is both unforgettable and hassle-free. With Mundial City, your World Cup journey becomes more than just a trip; it’s an experience that celebrates the essence of the game, offering you the best in convenience, comfort, and local immersion." textAlignment="JUSTIFY" wrappingWidth="297.33329772949224">
+                                    <font>
+                                        <Font name="Georgia" size="12.0" />
+                                    </font>
+                                </Text>
+                                <Label layoutX="77.0" layoutY="131.0" text="Why Choose Mondial City?" textFill="#2d7735" underline="true">
+                                    <font>
+                                        <Font name="Gabriola" size="19.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </HBox>
+                    <!-- HBox for Images Section and Contact Form side by side -->
+                    <HBox alignment="CENTER" spacing="10.0">
+                        <!-- Third AnchorPane (Images Section) -->
+                        <AnchorPane prefHeight="277.0" prefWidth="348.0">
+                            <children>
+                                <ImageView fitHeight="111.0" fitWidth="193.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@assets/Restaurant.jpg" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="90.0" fitWidth="169.0" layoutX="233.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@assets/Terrain.jpg" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="101.0" fitWidth="176.0" layoutX="225.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@assets/Hotels.jpg" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="97.0" fitWidth="176.0" layoutX="19.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@assets/Pharmacies.jpg" />
+                                    </image>
+                                </ImageView>
+                                <Label layoutX="85.0" layoutY="113.0" text="Restaurants">
+                                    <font>
+                                        <Font name="Gabriola" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="298.0" layoutY="113.0" text="Grounds">
+                                    <font>
+                                        <Font name="Gabriola" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="85.0" layoutY="242.0" text="Pharmacies">
+                                    <font>
+                                        <Font name="Gabriola" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="303.0" layoutY="242.0" text="Hotels">
+                                    <font>
+                                        <Font name="Gabriola" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="57.0" layoutY="-74.0" text="Let Make it the Best One!" textFill="#42732e">
+                                    <font>
+                                        <Font name="Bauhaus 93" size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+
+                        <!-- Fourth AnchorPane for Contact Form -->
+                        <AnchorPane prefHeight="277.0" prefWidth="348.0">
+                            <children>
+                                <Label layoutX="7.0" layoutY="10.0" style="-fx-font-weight: bold;" text="Contact Us" textFill="#2d7735" underline="true">
+                                    <font>
+                                        <Font name="Gabriola" size="19.0" />
+                                    </font>
+                                </Label>
+
+                                <Label layoutX="7.0" layoutY="40.0" text="Name:" />
+                                <TextField fx:id="nameField" layoutX="7.0" layoutY="60.0" prefWidth="330.0" />
+
+                                <Label layoutX="7.0" layoutY="100.0" text="Email:" />
+                                <TextField fx:id="emailField" layoutX="7.0" layoutY="120.0" prefWidth="330.0" />
+
+                                <Label layoutX="7.0" layoutY="160.0" text="Message:" />
+                                <TextArea fx:id="messageArea" layoutX="7.0" layoutY="180.0" prefHeight="60.0" prefWidth="330.0" />
+
+                                <Button fx:id="submitButton" layoutX="7.0" layoutY="240" prefWidth="330.0" style="-fx-background-color: #2d7735;" text="Submit" textFill="WHITE" onAction="#handleSubmitButton" />
+                            </children>
+                        </AnchorPane>
+                    </HBox>
+                </VBox>
+            </content>
+        </ScrollPane>
+
+
+
     </children>
 </AnchorPane>

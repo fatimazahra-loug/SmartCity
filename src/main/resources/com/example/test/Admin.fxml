@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="542.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tuto1.AdminLoginController">
+    <children>
+        <AnchorPane prefHeight="542.0" prefWidth="750.0">
+            <children>
+                <ImageView fitHeight="558.0" fitWidth="748.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/fullbg.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="177.0" layoutY="20.0" prefHeight="54.0" prefWidth="151.0" text="Welcome " textFill="#195339">
+                    <font>
+                        <Font name="Gabriola" size="45.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="46.0" fitWidth="53.0" layoutX="8.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/MLogo.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="232.0" layoutY="510.0" text="© Copyright 2024 Rajae&amp;Gumi. All rights reserved." textFill="WHITE">
+                    <font>
+                        <Font name="Georgia Bold Italic" size="9.0" />
+                    </font>
+                </Label>
+                <Button fx:id="logoutbutt" layoutX="668.0" layoutY="22.0" mnemonicParsing="false" onAction="#handlelogout" prefHeight="16.0" prefWidth="63.0" style="-fx-background-color: #16423c;" text="Log Out" textFill="WHITE" />
+                <AnchorPane fx:id="test" layoutX="360.0" layoutY="174.0" prefHeight="254.0" prefWidth="331.0" style="-fx-border-color: #f0ff7c;">
+                    <children>
+                        <Label fx:id="Label1" layoutX="7.0" layoutY="14.0" text="&quot;Choose The Collection that u want modify&quot;" textFill="#654707" underline="true">
+                            <font>
+                                <Font name="Gabriola" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="Label2" layoutX="41.0" layoutY="91.0" text="Collection" underline="true">
+                            <font>
+                                <Font name="Gabriola" size="19.0" />
+                            </font>
+                        </Label>
+                        <ChoiceBox fx:id="Collection" layoutX="130.0" layoutY="90.0" prefHeight="16.0" prefWidth="99.0" style="-fx-background-color: #d3e48d;" />
+                        <Button fx:id="Submit" layoutX="99.0" layoutY="173.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #d3e48d;" text="Submit" />
+                        <!-- Action ChoiceBox Pane -->
+                        <AnchorPane fx:id="actionPane" layoutX="130.0" layoutY="50.0" visible="false">
+                            <children>
+                                <Label fx:id="Label" layoutX="-20.0" layoutY="-50.0" text="Choose Action" textFill="#654707" underline="true">
+                                    <font>
+                                        <Font name="Gabriola" size="24.0" />
+                                    </font>
+                                </Label>
+                                <ChoiceBox fx:id="Action" layoutX="-20.0" layoutY="-2.0" prefHeight="16.0" prefWidth="99.0" style="-fx-background-color: #d3e48d;" />
+                                <Button fx:id="Submit2" layoutX="99.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #d3e48d;" text="Submit" />
+                                <Button fx:id="return1" layoutX="-127.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #d3e48d;" text="Return" />
+                            </children>
+                        </AnchorPane>
+                        <ScrollPane fx:id="ScrollAtt" layoutY="-1.0" prefHeight="302.0" prefWidth="329.0" style="-fx-background-color: #d3e48d;" visible="false">
+                            <content>
+                                <VBox fx:id="inputFieldsContainer" alignment="CENTER" layoutY="50.0" prefWidth="329.0" spacing="10.0" style="-fx-padding: 40 40; -fx-background-color: #d3e48d;" />
+                            </content>
+                        </ScrollPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="445.0" layoutY="13.0" prefHeight="44.0" prefWidth="226.0" />
+                <ImageView fitHeight="240.0" fitWidth="234.0" layoutX="47.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/admin.png" />
+                    </image>
+                </ImageView>
+            <Label fx:id="adminname" layoutX="318.0" layoutY="20.0" prefHeight="54.0" prefWidth="275.0" textFill="#195339">
+               <font>
+                  <Font name="Gabriola" size="45.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

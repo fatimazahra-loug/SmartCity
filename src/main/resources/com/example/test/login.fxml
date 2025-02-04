@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #16423C;" stylesheets="@design.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tuto1.LoginController">
+<AnchorPane prefHeight="542.0" prefWidth="748.0" style="-fx-background-color: #183D34;" stylesheets="@design.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tuto1.LoginController">
     <children>
-        <AnchorPane layoutX="296.0" layoutY="-6.0" prefHeight="309.0" prefWidth="208.0">
+        <AnchorPane layoutX="420.0" layoutY="136.0" prefHeight="309.0" prefWidth="323.0">
             <children>
-                <TextField fx:id="username_id" layoutX="12.0" layoutY="86.0" prefHeight="25.0" prefWidth="185.0" promptText="Username" style="-fx-font-family: 'Georgia';-fx-background-color: transparent; -fx-border-color: yellow; -fx-border-width: 0px 0px 2px 0px;" styleClass="text-field">
+                <TextField fx:id="username_id" layoutX="12.0" layoutY="86.0" prefHeight="27.0" prefWidth="306.0" promptText="Username" style="-fx-font-family: 'Georgia';-fx-background-color: transparent; -fx-border-color: yellow; -fx-border-width: 0px 0px 2px 0px;" styleClass="text-field">
                     <font>
                         <Font name="Georgia" size="12.0" />
                     </font>
                 </TextField>
-                <PasswordField fx:id="password_id" layoutX="12.0" layoutY="148.0" prefHeight="25.0" prefWidth="185.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: yellow; -fx-border-width: 0px 0px 2px 0px;" styleClass="password-field">
+                <PasswordField fx:id="password_id" layoutX="12.0" layoutY="148.0" prefHeight="27.0" prefWidth="306.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: yellow; -fx-border-width: 0px 0px 2px 0px;" styleClass="password-field">
                     <font>
                         <Font name="Georgia" size="12.0" />
                     </font>
                 </PasswordField>
-                <Button fx:id="login_id" layoutX="70.0" layoutY="205.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #16db3a;" text="Log In">
+                <Button fx:id="login_id" layoutX="70.0" layoutY="205.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="193.0" style="-fx-background-color: #16db3a;" text="Log In">
                     <font>
                         <Font name="Gabriola" size="15.0" />
                     </font>
@@ -28,37 +33,79 @@
                         <Cursor fx:constant="HAND" />
                     </cursor>
                 </Button>
-                <Hyperlink fx:id="signup_id" layoutX="130.0" layoutY="249.0" text="SingUp" textFill="#caf44c" underline="true">
+                <Hyperlink fx:id="signup_id" layoutX="203.0" layoutY="249.0" text="SingUp" textFill="#caf44c" underline="true">
                     <font>
                         <Font name="Gabriola" size="17.0" />
                     </font>
                 </Hyperlink>
-                <Label layoutX="14.0" layoutY="258.0" text="Create new account ?" textFill="#fffffe">
+                <Label layoutX="87.0" layoutY="258.0" text="Create new account ?" textFill="#fffffe">
                     <font>
                         <Font name="Georgia" size="12.0" />
                     </font>
                 </Label>
+              <Label layoutX="79.0" layoutY="-30.0" prefHeight="77.0" prefWidth="178.0" text="Welcome  " textFill="#ffffec">
+                  <font>
+                      <Font name="Gabriola" size="53.0" />
+                  </font>
+              </Label>
+            <Label layoutX="105.0" layoutY="3.0" prefHeight="77.0" prefWidth="178.0" text="to  MondialCity " textFill="#3fc700">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+            </Label>
             </children>
         </AnchorPane>
-        <Label layoutX="91.0" layoutY="173.0" prefHeight="47.0" prefWidth="160.0" style="-fx-border-color: green; -fx-border-width: 0px 0px 2px 0px;" text="MondialCity" textFill="#f0ff7c">
+      <AnchorPane layoutX="1.0" layoutY="3.0" prefHeight="542.0" prefWidth="380.0">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="200.0" layoutX="21.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/logonobg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="190.0" fitWidth="247.0" layoutX="75.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img2.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="171.0" layoutY="365.0" text="WorldCup" textFill="#30e633">
+               <font>
+                  <Font name="Georgia" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="235.0" layoutY="390.0" text="2030" textFill="#fb160a">
+               <font>
+                  <Font name="Georgia" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="43.0" fitWidth="60.0" layoutX="125.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/Ball.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="151.0" layoutY="495.0" text="Viva o momento" textFill="#e4e42e">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="491.0" layoutY="497.0" text="Vive el momento" textFill="#e4e42e">
+         <font>
+            <Font name="Georgia" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="353.0" layoutY="498.0" text="عش اللحظة" textFill="#e4e42e">
+         <font>
+            <Font name="Footlight MT Light" size="15.0" />
+         </font>
+      </Label>
+        <Button onAction="#handleReturnHome" fx:id="home_id" layoutX="667.0" layoutY="507.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="77.0" style="-fx-background-color: #16db3a;" text="Home Page">
             <font>
-                <Font name="Gabriola" size="36.0" />
+                <Font name="Gabriola" size="15.0" />
             </font>
-        </Label>
-        <Label layoutX="23.0" layoutY="44.0" prefHeight="54.0" prefWidth="185.0" text="Welcome  " textFill="#d3e48d">
-            <font>
-                <Font name="Gabriola" size="53.0" />
-            </font>
-        </Label>
-        <Label layoutX="100.0" layoutY="99.0" prefHeight="54.0" prefWidth="185.0" text="to " textFill="#d3e48d">
-            <font>
-                <Font name="Gabriola" size="57.0" />
-            </font>
-        </Label>
-        <ImageView fitHeight="78.0" fitWidth="63.0" layoutX="37.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@assets/img.png" />
-            </image>
-        </ImageView>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
     </children>
 </AnchorPane>

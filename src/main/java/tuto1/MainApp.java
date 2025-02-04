@@ -15,8 +15,8 @@ public class MainApp extends Application {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/com/example/test/home.fxml"));
             primaryStage.setTitle("MondialCity");
-
-
+            primaryStage.setResizable(false);
+            primaryStage.getIcons().add(new javafx.scene.image.Image(Objects.requireNonNull(getClass().getResourceAsStream("/com/example/test/assets/Ball.png"))));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
