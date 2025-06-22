@@ -1,0 +1,1 @@
+MondialCity is an innovative office application developed using Java and Big Data tools. It serves as a smart city guide for tourists attending the 2030 FIFA World Cup. The project is designed to provide visitors with personalized and detailed information about host cities and countries, ensuring an enhanced and seamless experience for football fans and tourists.
